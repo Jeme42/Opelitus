@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #FF71E5;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.Matematiikka {width: 90%; background-color: #4CAF50;} /*Tässä voi ite vaihtaa prosenttejä, WIP*/
+.Historia {width: 80%; background-color: #2196F3;}
+.Liikunta {width: 65%; background-color: #f44336;}
+.Maantieto {width: 60%; background-color: #B68426;}
+.Tietotekniikka {width: 85%; background-color: #808080;}
+.Äidinkieli {width: 30%; background-color: #E9FF00;}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Tilastoni</h1>
+</div>
+
+
+<div class="navbar">
+  <a href="#Etusivu" onclick="window.location='Opelitus_Etusivu.html';">Etusivu</a>
+  <a href="#Minun_Opelitus" onclick="window.location='minun_opelitus.html';">Minun Opelitus</a><!--Tässä on ne kaikki neljä napit sivun yläpuolelta, linkit on WIP-->
+  <a href="#Tehtävät" onclick="window.location='tehtävät.html';">Tehtävät</a>
+  <a href="#Kauppa" class="right" onclick="window.location='kauppa.html';">Kauppa</a>
+</div>
+
+<div class"side">
+  <p>Matematiikka</p>
+  <div class="container">
+    <div class="skills Matematiikka">90%</div>
+  </div>
+
+  <p>Historia</p>
+  <div class="">
+    <div class="skills Historia">80%</div>
+  </div>
+
+  <p>Liikunta</p>
+  <div class="container">
+    <div class="skills Liikunta">65%</div>
+  </div>
+
+  <p>Maantieto</p>
+  <div class="container">
+    <div class="skills Maantieto">60%</div>
+  </div>
+
+  <p>Tietotekniikka</p>
+  <div class="container">
+    <div class="skills Tietotekniikka">85%</div>
+  </div>
+
+  <p>Äidinkieli</p>
+  <div class="container">
+    <div class="skills Äidinkieli">30%</div>
+  </div>
+</div>
+
+</body>
+</html>

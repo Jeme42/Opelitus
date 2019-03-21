@@ -1,0 +1,90 @@
+
+body{
+  background-image: url("background.png");
+  background-color: #cccccc;
+  width:auto;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+img {
+	position: absolute;
+display:inline-block;
+  height:100%;
+	left: 150px;
+  top: 10px;
+}
+
+#logo{
+  position: absolute;
+  height: 200px;
+  left: 1600px;
+  top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  height: 200px;
+  width: 400px;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #58ACFA;
+  border: none;
+  border-radius: 500px;
+  box-shadow: 0 10px #999;
+  left: 5000px;
+}
+
+.button:hover {background-color: #0080FF}
+
+.button:active {
+  background-color: #084B8A;
+  box-shadow: 0 5px #0B3861;
+  transform: translateY(4px);
+}
+
+#helmets_button{
+  position: absolute;
+  left:1350px;
+  top:225px;
+}
+#shirt_button{
+  position: absolute;
+  left:1400px;
+  top:450px;
+}
+#pant_button{
+  position: absolute;
+  left:1350px;
+  top:675px;
+}
+
+
+
+character{
+z-index: -1000;
+}
+
+.shirt{
+	visibility:hidden;
+  z-index: 2;
+}
+
+.pant{
+	visibility:hidden;
+  z-index: 1;
+	}
+
+.helmets{
+  	visibility:hidden;
+    z-index: 3;
+  }
